@@ -21,8 +21,7 @@ sudo apt install docker-compose
 ```
 This process will set up the docker image that houses the Grafana Dashboad!
 
-## Processing (shown in the video)
-
+## Processing
 1. Enable docker using the command
 ```bash
 cd docker
@@ -39,9 +38,9 @@ ml_monitor.control.start()
 ```
 You will get a message that a Prometheus UI should be reachable on http://localhost:9090. 
 
-3. Setup Jupyter notebook and open the file "ML_minitoring_Grafana.ipynb"
+3. Setup Jupyter notebook and open the file "ML_monitoring_Grafana.ipynb"
 Run this file. The first part will train the model and in the end random test samples will be generated to mimic a production setup. Increase the number of "epochs" to run for a longer Production-like setup
 
 4. Open the Grafana dashboard at http://localhost:3000 and monitor the "n_rmse" metric.
 
-# Congratulations, now you know how to monitor metrics at production time!
+# Now we can monitor metrics at production time!
